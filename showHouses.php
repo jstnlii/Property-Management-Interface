@@ -41,11 +41,9 @@
         ?>
 
         <?php
-        // Query to fetch apartments
         $query = "SELECT * FROM Property WHERE Classification = 'House'";
         $result = $connection->query($query);
 
-        // Display each apartment property as a row in the table
         while ($row = $result->fetch()) {
             echo "<tr>";
             echo "<td>" . $row['PropertyID'] . "</td>";

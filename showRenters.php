@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>Rental Group Renters</title>
+    <title>Rental Group Details</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
     <style>
         table {

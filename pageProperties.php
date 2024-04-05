@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Properties</title>
+    <title>All Properties</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 
@@ -33,10 +33,9 @@
             <th>Lease End Date</th>
         </tr>
         <?php
-        // Include the file to establish a database connection
+
         include 'connectDB.php';
 
-        // SQL query to select all properties
         $query = "SELECT * FROM Property";
         $result = $connection->query($query);
 

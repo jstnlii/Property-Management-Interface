@@ -7,8 +7,7 @@
     <link rel="stylesheet" type="text/css" href="styles.css">
     <style>
         table {
-            width: 100%;
-            /* change only this table */
+            width: 100%; /* change only this table */
         }
     </style>
 </head>
@@ -42,11 +41,10 @@
         ?>
 
         <?php
-        // Query to fetch apartments
+
         $query = "SELECT * FROM Property WHERE Classification = 'Apartment'";
         $result = $connection->query($query);
 
-        // Display each apartment property as a row in the table
         while ($row = $result->fetch()) {
             echo "<tr>";
             echo "<td>" . $row['PropertyID'] . "</td>";

@@ -7,8 +7,7 @@
     <link rel="stylesheet" type="text/css" href="styles.css">
     <style>
         table {
-            width: 100%;
-            /* change only this table */
+            width: 100%; /* change only this table */
         }
     </style>
 </head>

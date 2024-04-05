@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>rental</title> <!-- "Your home page should be called rental" -->
+    <title>Rental Database - Home</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 
