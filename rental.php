@@ -15,9 +15,7 @@
     <h1>Welcome to the Rental Database</h1>
 
     <h2>List of Properties:</h2>
-    <?php
-    include 'getProperties.php';
-    ?>
+    <?php include 'getProperties.php'; ?>
 
     <br><br>
     <hr>
@@ -27,9 +25,7 @@
     <form action="updateRentalGroupPrefs.php" method="post">
         <label for="rentalGroup">Select Rental Group:</label>
         <select name="rentalGroup" id="rentalGroup">
-            <?php
-            include 'getRentalGroupPrefs.php';
-            ?>
+            <?php include 'getRentalGroupPrefs.php'; ?>
         </select>
         <input type="submit" value="Get Preferences">
     </form>
@@ -42,7 +38,6 @@
     <p>Get Rental Group Members of:</p>
     <form action="showRenters.php" method="post">
         <?php
-
         $query = "SELECT Code FROM RentalGroup";
         $result = $connection->query($query);
 
@@ -67,7 +62,6 @@
         $query = "SELECT Classification, AVG(Cost) AS AverageRent FROM Property GROUP BY Classification";
         $result = $connection->query($query);
 
-        // echo '<button onclick="location.href=\'rental.php\'">Go Back to Home</button>';
         while ($row = $result->fetch()) {
             echo "<tr>";
             echo "<td><a href='show" . urlencode($row['Classification']) . "s.php'>" . $row['Classification'] . "</a></td>";
@@ -79,9 +73,7 @@
 
     <br><br><br><br><br><br><br><br>
 
-    <?php
-    $connection = null;
-    ?>
+    <?php $connection = null; ?>
 
 </body>
 

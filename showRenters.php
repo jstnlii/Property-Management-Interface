@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8">
     <title>Rental Group Details</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
     <style>
         table {
-            width: 25%; /* change only this table */
+            width: 25%;
+            /* change only this table */
         }
     </style>
 </head>
+
 <body>
     <?php
     include 'connectDB.php';
@@ -45,7 +48,7 @@
             // table: attributes in the left column and preferences in the right column
             echo "<h2>Rental Group Preferences</h2>";
             echo "<table>";
-            
+
             // HEADERS
             echo "<tr><th>Attribute</th>";
             echo "<th>Preference</th></tr>";
@@ -64,7 +67,7 @@
             include 'backToHomeButton.php';
         } else {
             echo "<h1>No rental group selected</h1>";
-            
+
             echo "<br>";
             include 'backToHomeButton.php';
         }
@@ -73,4 +76,5 @@
     }
     ?>
 </body>
+
 </html>
