@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    
+
     <?php include 'navbar.php'; ?>
 
     <h1>All Properties:</h1>
@@ -64,7 +64,9 @@
 
     </table>
 
-    <button onclick="location.href='rental.php'">Go Back to Home</button>
+    <?php
+    include 'backToHomeButton.php';
+    ?>
 
     <?php
     $connection = null;

@@ -71,7 +71,7 @@
     </table>
 
     <?php
-    echo '<br><button onclick="location.href=\'rental.php\'">Go Back to Home</button>';
+    include 'backToHomeButton.php';
     $connection = null;
     ?>
 

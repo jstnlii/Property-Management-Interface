@@ -30,7 +30,7 @@
         echo "<h2 style=\"font-weight:normal\"><i>Rental group preferences successfully updated for: <u><b><span style='color: green;'><u>" . $rentalGroupID . "</u></span></b></u>!</i></h2>";
 
         echo "<br>";
-        echo '<button onclick="location.href=\'rental.php\'">Go Back to Home</button>';
+        include 'backToHomeButton.php';
     } else {
         echo "Invalid request!";
     }

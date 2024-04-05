@@ -61,12 +61,12 @@
             echo "</table>";
 
             echo "<br>";
-            echo '<button onclick="location.href=\'rental.php\'">Go Back to Home</button>';
+            include 'backToHomeButton.php';
         } else {
             echo "<h1>No rental group selected</h1>";
             
             echo "<br>";
-            echo '<button onclick="location.href=\'rental.php\'">Go Back to Home</button>';
+            include 'backToHomeButton.php';
         }
     } else {
         echo "Invalid request!";
