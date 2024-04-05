@@ -74,7 +74,9 @@
                 <br><br>
             </form>
 
-            <button onclick="location.href='rental.php'">Go Back to Home</button>
+            <?php
+            include 'backToHomeButton.php';
+            ?>
 
             <?php
         } else {
