@@ -6,7 +6,7 @@ This Rental Database Management System is a web-based application designed to si
 ## Technologies Used
 - HTML/CSS: Front-end design and layout
 - PHP: Server-side scripting for dynamic content generation
-- MySQL/SQL: Database management system for storing and retrieving data
+- MySQL: Database management system for storing and retrieving data
 - Apache HTTP Server: Backend hosting the PHP files and serving web pages
 
 ## Entity-Relationship Diagram
