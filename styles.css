@@ -41,6 +41,13 @@ input[type="submit"]:hover {
     background-color: #438a45;
 }
 
+img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%; /* Make sure the image doesn't exceed the width of its container */
+    height: auto; /* Maintain aspect ratio */
+}
+
 
 
 

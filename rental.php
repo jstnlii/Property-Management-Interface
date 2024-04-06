@@ -8,9 +8,15 @@
 </head>
 
 <body>
+
     <?php include 'connectDB.php'; ?>
 
     <?php include 'navbar.php'; ?>
+
+    <br>
+    <img src="cityscape.png" alt="Cityscape banner">
+
+    <br><hr>
 
     <h1>Welcome to the Rental Database</h1>
 
@@ -59,7 +65,9 @@
             <th>Average Monthly Rent</th>
         </tr>
         <?php
-        $query = "SELECT Classification, AVG(Cost) AS AverageRent FROM Property GROUP BY Classification";
+        $query = "SELECT Classification, AVG(Cost) AS AverageRent
+                  FROM Property
+                  GROUP BY Classification";
         $result = $connection->query($query);
 
         while ($row = $result->fetch()) {
