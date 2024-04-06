@@ -18,7 +18,7 @@ $result = $connection->query($query);
 // echo "th, td { border: 1px solid black; padding: 8px; text-align: left; }";
 // echo "</style>";
 echo "<table>";
-echo "<tr><th>Property ID</th><th>Owner Name(s)</th><th>Manager Name</th></tr>";
+echo "<tr><th>Property ID</th><th>Owner's Name</th><th>Manager's Name</th></tr>";
 
 while ($row = $result->fetch()) {
     echo "<tr>";
