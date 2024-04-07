@@ -36,11 +36,8 @@
             <th>Lease Sign Date</th>
             <th>Lease End Date</th>
         </tr>
-        <?php
-        include 'connectDB.php';
-        ?>
 
-        <?php
+        <?php include 'connectDB.php';
 
         $query = "SELECT * FROM Property WHERE Classification = 'Apartment'";
         $result = $connection->query($query);
@@ -70,8 +67,8 @@
     </table>
 
     <?php
-    include 'backToHomeButton.php';
-    $connection = null;
+        include 'backToHomeButton.php';
+        $connection = null;
     ?>
 
 </body>

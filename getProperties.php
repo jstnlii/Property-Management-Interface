@@ -1,6 +1,4 @@
 <?php
-include 'connectdb.php';
-
 $query = "SELECT Property.PropertyID, Person.FirstName AS OwnerFirstName, Person.LastName AS OwnerLastName, 
           Manager.FirstName AS ManagerFirstName, Manager.LastName AS ManagerLastName
           FROM Property 

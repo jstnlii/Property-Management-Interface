@@ -13,7 +13,6 @@
 
     <?php include 'connectDB.php';
 
-
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         $rentalGroupID = $_POST['rentalGroup'];
@@ -86,7 +85,9 @@
         echo "Invalid request!";
     }
 
+    $connection = null;
     ?>
+
 </body>
 
 </html>

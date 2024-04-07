@@ -32,9 +32,8 @@
             <th>Lease Sign Date</th>
             <th>Lease End Date</th>
         </tr>
-        <?php
 
-        include 'connectDB.php';
+        <?php include 'connectDB.php';
 
         $query = "SELECT * FROM Property";
         $result = $connection->query($query);
@@ -63,13 +62,10 @@
 
     </table>
 
-    <?php
-    include 'backToHomeButton.php';
-    ?>
+    <?php include 'backToHomeButton.php'; ?>
 
-    <?php
-    $connection = null;
-    ?>
+    <?php $connection = null; ?>
+
 </body>
 
 </html>

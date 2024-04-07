@@ -7,17 +7,15 @@
     <link rel="stylesheet" type="text/css" href="styles.css">
     <style>
         table {
-            width: 25%;
-            /* change only this table */
+            width: 25%; /* change only this table */
         }
     </style>
 </head>
 
 <body>
-    <?php
-    include 'connectDB.php';
+    <?php include 'connectDB.php'; ?>
 
-    include 'navbar.php';
+    <?php include 'navbar.php';
 
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
@@ -74,7 +72,10 @@
     } else {
         echo "Invalid request!";
     }
+
+    $connection = null;
     ?>
+
 </body>
 
 </html>

@@ -13,6 +13,7 @@
 </head>
 
 <body>
+
     <?php include 'navbar.php'; ?>
     
     <h1>Rooms</h1>
@@ -35,9 +36,8 @@
             <th>Lease Sign Date</th>
             <th>Lease End Date</th>
         </tr>
-        <?php
-        include 'connectDB.php';
-        ?>
+
+        <?php include 'connectDB.php'; ?>
 
         <?php
 
@@ -71,8 +71,8 @@
     </table>
 
     <?php
-    include 'backToHomeButton.php';
-    $connection = null;
+        include 'backToHomeButton.php';
+        $connection = null;
     ?>
 
 </body>

@@ -36,11 +36,9 @@
             <th>Lease Sign Date</th>
             <th>Lease End Date</th>
         </tr>
-        <?php
-        include 'connectDB.php';
-        ?>
 
-        <?php
+        <?php include 'connectDB.php';
+
         $query = "SELECT * FROM Property WHERE Classification = 'House'";
         $result = $connection->query($query);
 

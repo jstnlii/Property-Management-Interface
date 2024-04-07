@@ -16,7 +16,8 @@
     <br>
     <img src="cityscape.png" alt="Cityscape banner">
 
-    <br><hr>
+    <br>
+    <hr>
 
     <h1>Welcome to the Rental Database</h1>
 
